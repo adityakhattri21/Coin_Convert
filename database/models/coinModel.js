@@ -7,11 +7,9 @@ const coinSchema = new mongoose.Schema({
     },
     symbol:{
         type:String,
-        required:true
     },
     id:{
         type:String,
-        required:true
     }
 });
 
