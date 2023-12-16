@@ -11,6 +11,9 @@ app.use("/api/v1/coin",coinRoute)
 app.get("/",(req,res)=>{
     res.status(200).json({message:"Working"});
 });
+app.get("/ping",(req,rest)=>{
+ rest.status(200).json({message:"pong"});
+})
 app.use(errorMiddleware);
 
 module.exports ={
